@@ -1,0 +1,39 @@
+{
+  "name": "myDevelop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "build": "webpack --progress --optimize-minimize",
+    "serve": "webpack-dev-server --hot --inline --devtool source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkyisgk/myDevelop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkyisgk/myDevelop/issues"
+  },
+  "homepage": "https://github.com/tkyisgk/myDevelop#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.9",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "ts-loader": "^3.2.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1"
+  }
+}
