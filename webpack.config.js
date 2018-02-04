@@ -65,10 +65,16 @@ module.exports = [{
     }]
   },
   plugins: [
+    // declare external plugin
     new webpack.ProvidePlugin(
       {
         jQuery: "jquery",
         $: "jquery",
+      }
+    ),
+    new webpack.ProvidePlugin(
+      {
+        THREE: "three",
       }
     ),
   ],
