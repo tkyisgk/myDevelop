@@ -1,11 +1,11 @@
 body {
-  color: darkcyan;
+  color: #535353;
   transition: all .1s ease;
 }
 
 p:before {
   display: inline-block;
-  width: 1em;
+  width: 10em;
   height: 1em;
   background-image: url("../img/ishigaki logo.svg");
   background-size: contain;

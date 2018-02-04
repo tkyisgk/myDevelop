@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = [{
-  entry: ['./src/app.js'],
+  entry: ['./src/app.ts'],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public')
@@ -59,6 +59,9 @@ module.exports = [{
           name: './fonts/[name].[ext]'
         }
       }
+    }, {
+      test: /\.ts$/,
+      use: "ts-loader",
     }]
   },
   plugins: [
