@@ -8,18 +8,11 @@
     "build": "webpack --progress --optimize-minimize",
     "serve": "webpack-dev-server --hot --inline --devtool source-map"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tkyisgk/myDevelop.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tkyisgk/myDevelop/issues"
-  },
-  "homepage": "https://github.com/tkyisgk/myDevelop#readme",
   "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
     "@types/webpack": "^3.8.4",
     "autoprefixer": "^7.2.4",
     "css-loader": "^0.28.7",

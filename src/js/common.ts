@@ -2,20 +2,26 @@
 declare const $: any;
 declare const THREE: any;
 
+
 $(function () {
-  const test = new TestComponent();
-  test.test();
+  const test = new WebGLCompponent();
+  test.init();
 })
 
-export class TestComponent {
-  
-  public test(): void {
-    const width = 960;
-    const height = 540;
+
+/**
+ * WebGL作成クラス
+ */
+export class WebGLCompponent {
+
+  public async init(): Promise<void> {
+
+    const width = $(window).innerWidth();
+    const height = $(window).innerHeight();
 
     // レンダラーを作成
     const renderer = new THREE.WebGLRenderer({
-      canvas: document.querySelector('#myCanvas')
+      canvas: document.querySelector('#canvas')
     });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(width, height);
@@ -34,6 +40,9 @@ export class TestComponent {
     scene.add(box);
 
     tick();
+    
+    return Promise.resolve();
+    
 
     // 毎フレーム時に実行されるループイベントです
     function tick() {
