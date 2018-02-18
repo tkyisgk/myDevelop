@@ -74,6 +74,11 @@ module.exports = [{
     ),
     new webpack.ProvidePlugin(
       {
+        Barba: "barba.js",
+      }
+    ),
+    new webpack.ProvidePlugin(
+      {
         THREE: "three",
       }
     ),
